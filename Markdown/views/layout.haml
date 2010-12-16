@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title Markdown
+    /[if lte IE 8]
+      :javascript 
+        document.createElement('footer');document.createElement('header');
+  %body
+    #content
+      %header
+        %h1#title Markdown Test
+      =yield
+      %footer

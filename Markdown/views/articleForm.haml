@@ -1,0 +1,23 @@
+%form{ :action => "", :method => "post"}
+  %fieldset
+    %table
+      %tbody
+        %tr
+          %td
+            %label{:for => "name"} Your Name:
+          %td
+            %input{:type => "text", :name => "name", :class => "text"}
+        %tr
+          %td
+            %label{:for => "mail"} Contact Email:
+          %td
+            %input{:type => "text", :name => "mail", :class => "text"}
+        %tr
+          %td
+            %label{:for => "blurb"} Outline:
+          %td
+            %input{:type => "text", :name => "blurb", :class => "text"}
+        %tr
+          %td
+          %td
+            %input{:type => "submit", :value => "Send", :class => "button"}
