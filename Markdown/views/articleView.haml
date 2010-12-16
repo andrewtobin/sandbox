@@ -1,5 +1,5 @@
 %h2 Article View
-- @result.each do |k,v|
-  %b k
-  %em v
-  %br
+- @result.each do |r|
+ %p
+  %a{:href => "/article/view/" + r["id"]}=r["id"]
+  
